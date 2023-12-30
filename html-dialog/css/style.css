@@ -1,11 +1,23 @@
 
-dialog::backdrop {
-    background-color: rgba(0, 0, 0, .5);
-}
 
 dialog {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 10px;
     box-shadow: 25px 9px 8px black;
+    transition: all 2s ease;
     width: 80%;
-}
+  }
+  dialog[open] {
+    opacity: 1;
+    pointer-events: inherit;
+  }
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, .5);
+  }
