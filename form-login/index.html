@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="modal" id="id01">
+        <span class="close" title="Close Modal">&times;</span>
+        <form action="" method="post" class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="./assets/images/login.jpg" alt="Login" class="avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Usuário</b></label>
+                <input type="text" name="uname" placeholder="Insira seu nome de usuário" required>
+                <label for="pwd"><b>Senha</b></label>
+                <input type="password" name="pwd" id="pwd" placeholder="Insira sua senha" required>
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" name="remenber"> Lembrar
+                </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+        </form>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
