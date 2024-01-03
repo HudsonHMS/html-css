@@ -14,6 +14,4 @@ if (nav) {
   }, true);
 }
 
-menuBars.addEventListener( 'click', () => {
-  menuBars.classList.toggle('change');
-} );
+includeHtml();
