@@ -30,7 +30,8 @@ body {
         'nav footer';
     height: 100%; 
     margin-left: 15px;
-    width: 100%
+    width: 100%;
+    background-color: #099c22;
 }
 
 .main-content session {
@@ -58,20 +59,9 @@ body {
     justify-items: center;
 }
 
-.navigation::after {
-    content: '';
-    position: absolute;
-    top: 43px;
-    right: -55px;
-    width: 60px;
-    border-radius: 50%;
-    height: 60px;
-    background: #099c22;
-    z-index: 2000;
-}
-
 #content {
     grid-area: content;
+    border-top-left-radius: 29px
 }
 
 #footer {
