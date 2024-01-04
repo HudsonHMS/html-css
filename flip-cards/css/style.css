@@ -1,0 +1,52 @@
+body{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7e7ff;
+}
+
+.flipcard {
+    width: 500px;
+    aspect-ratio: 16/9;
+    perspective: 3200px;
+    position: relative;
+}
+
+.flipcard__frontside,
+.flipcard__backside {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, .09);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flipcard__frontside {
+    
+    transform: rotateY(0deg);
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.flipcard__backside{
+   
+    transform: rotateY(-180deg);
+    background-color: hsl(215.9, 20%, 50%);
+}
+
+.flipcard:hover .flipcard__frontside {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.flipcard:hover .flipcard__backside {
+    transform: rotateY(0deg);
+}
